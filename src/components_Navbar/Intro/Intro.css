@@ -1,0 +1,189 @@
+.intro{
+    display: flex;
+    height: 67vh;
+    margin-top: 6rem;
+    
+}
+.i-left{
+    display:flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap:2rem
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.espan{
+    color: var(--orange);
+    font-size: 35px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.espan-p{
+    font-size: 35px;
+    margin-top: 0px;
+    padding-top:0px;
+}
+#naav{
+    padding-top: 6rem;
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.i-icons{
+    margin-left: 3rem;
+    display: flex;
+    gap: 0rem;
+    padding-left: 50px;
+    cursor:pointer;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+#tw{
+     margin-top:-1rem;
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    left:-10%;
+    top: -15%;
+}
+
+.i-right>:nth-child(2){
+    top: -4.5rem;
+    transform: scale(0.67);
+    left:-3rem;  
+}
+
+.i-right>:nth-child(3){
+    /* transform: scale(0.5); */
+    left: -2%;
+    top: -30%
+    
+    /* padding-right: 1000px; */
+}
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    top: -20%; 
+    left :-15%;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+@media (min-width:280px) and (max-width:451px){
+    .intro{
+        flex-direction: column;
+        margin-top: 10px;
+        height: 100vh;
+    }
+    .i-right{
+        transform: scale(0.5rem);
+        left: -0.3rem;
+    }
+    #naav{
+        padding-top: 10px;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .espan-p{
+        font-size: 25px;
+        margin-top: 0px;
+        padding-top:0px;
+        height: 100px;
+    }
+    .espan{
+        font-size: 25px;
+        margin-top: 0px;
+        padding-top:0px;
+        height:100px;
+    }
+    .i-right>:nth-child(1){
+        transform: scale(0.5);
+        left:-25%;
+        top: -60%;
+        height:400px;
+        width:340px;
+    }
+    .i-right>:nth-child(2){
+        top: -13rem;
+        transform: scale(0.37);
+        left:-11rem;  
+        /* height:400px;
+        width:340px; */
+        
+    }
+    .i-right>:nth-child(3){
+        /* transform: scale(0.5); */
+        left: -8%;
+        top: -40%;
+        height:400px;
+        width:340px;
+        
+        /* padding-right: 1000px; */
+    }
+    #glassImo{
+        display:none;
+    }
+    #floating-card-1{
+        display: none;
+    }
+}
+/* @media (min-width:701px){
+    .i-right{
+        transform: scale(0.5rem);
+        left: 2rem;
+    } 
+    #naav{
+        padding-top: 10px;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+} */
+@media (max-width:1440px) {
+    #naav{
+        /* padding-top: 10px; */
+        
+        line-height: 4rem;
+    }
+}
+@media (min-width:451px) and (max-width:991px){
+    #naav{
+        padding-top: 10px;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .i-right{
+        left: -6rem;
+    }
+    .floating-card:nth-of-type(1){
+        top:-7rem !important;
+        
+    }
+
+}
+
+
+

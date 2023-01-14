@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --webkit-font-smoothing: antialiased;
+    font-family: 'IBM Plex Serif', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+text-align:right;  
+}
+
+.container-contact{
+    background:var(--backPage);
+    max-width: 1140px;
+    height:80vh;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.rdd-contact{
+    font-size: 35px;
+    font-weight: bolder;
+    color: var(--orange);
+    padding-bottom: 25px;
+}
+.row-contact{
+    margin-left: 80px;
+    margin-right:80px;
+}
+.section-contact{
+    width:45%;
+    height: 100px;
+    background-color: #fad591;
+    /* background-color: var(--info); */
+    /* opacity: 0.6; */
+    display: flex;
+    justify-content:flex-start; 
+    align-items:center;
+    text-align: left;
+    margin: 20px;
+    float: left;
+    border: 5px solid #fedfa5;
+    border-radius: 10px;
+}
+ /* .section-contact:hover{
+    background-color: #fdcd75;
+    background-color: var(--info);
+    border: 5px solid #fedfa5;
+    color: aliceblue;
+}  */
+
+.section-contact{
+    padding-top: 10px;
+}
+.section-contact>i{
+    /* display: flex;
+    justify-content: flex-start; */
+    font-size: 40px;
+    opacity: 0.8;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    padding-top: 5px;
+    color: var(--info);
+    border-radius: 50%;
+    background: var(--orange);
+}
+.text-contact{
+    color: rgb(86, 78, 78);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.text-contact-p,
+.text-contact-p a{
+    /* font-weight: bold; */
+    font-size: 16px;
+    font-family: sans-serif;
+    color:var(--dark)
+}
+.text-contact-p a{
+    padding-right: 20px;
+    color: var(--dark);
+    text-decoration: none;
+}
+.text-contact-p a .h3i{
+    font-size: 28px;
+    color:var(--dark)
+}
+.text-contact-p a .h3i:hover,
+.text-contact-p a:hover{
+    color: var(--info);
+}
+
+.section-contact-2{
+    width:90%;
+    height: 130px;
+    margin-left: 40px;
+    /* background-color: #fad591; */
+    /* background-color: var(--info); */
+    /* opacity: 0.6; */
+    display: flex;
+    justify-content:center; 
+    align-items:center;
+    text-align: center;
+    /* margin: 20px; */
+    float: left;
+    /* border: 5px solid #fedfa5; */
+    border-radius: 10px;
+}
+.section-contact-2 p{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.section-contact-2 p>h1{
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: var(--info);
+}
+.btn-contact>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--info);
+}
+
+.btn-contact{
+    background: var(--backPage);
+    color:#4d7af69c;
+    padding: 4px 8px;
+    font-size: 18px;
+    border: none;
+    line-height: 24px;
+    outline: none;
+    cursor: pointer;
+    border: 2.5px solid #4d7af69c;
+    border-radius: 6px;
+     margin: 10px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background:#fad591;  */
+}
+.btn-contact:hover{
+    color:var(--info);
+    border : 2.5px solid var(--info);
+    background:#4d7af655 ;
+}
+
+@media (min-width:280px) and (max-width:960px){
+    .container-contact{
+        height:150vh;
+    }
+    
+    .rdd-contact{
+        padding: 20px;
+        font-size: 16px;
+        justify-content: center;
+    }
+    .row-contact{
+        margin: 0px 0px;
+    }
+    .text-contact-p{
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .text-contact-p a{
+        padding: 0px;
+    }
+    .text-contact{
+        font-size: 18px;
+    }
+    .section-contact{
+        width:90%;
+        height: 150px;
+    }
+    .section-contact>i{
+        margin: 0px 10px;
+    }
+    .section-contact-2{
+        margin:10px;
+        padding: 10px 0px 10px 0px;
+    }
+    .section-contact-2 h1{
+        margin:40px 0px 0px 0px;
+        /* padding: 10px 0px 10px 0px; */
+    }
+    .section-contact-2 p{
+        font-size: 16px;
+        margin:40px 0px 0px 0px;
+        padding: 10px 0px 10px 20px;
+    }
+    .btn-contact{
+        
+        margin-top: 50px;
+        
+    }
+
+}
